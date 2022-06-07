@@ -22,8 +22,7 @@ camera.position.setZ(25);
 
 renderer.render(scene, camera);
 
-// const igloo = new THREE.TextureLoader().load('./snow2.jpeg')
-// scene.background = igloo
+
 renderer.outputEncoding = THREE.sRGBEncoding;
 
 const hdri = new RGBELoader();
