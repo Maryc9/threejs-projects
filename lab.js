@@ -1,9 +1,8 @@
 import './style.css'
 import * as THREE from 'three'
-import { OrbitControls } from '/node_modules/three/examples/jsm/controls/OrbitControls.js';
 import { RGBELoader} from 'three/examples/jsm/loaders/RGBELoader.js';
 import { FlyControls } from 'three/examples/jsm/controls/FlyControls.js';
-import { Sphere } from 'three';
+
 
 
 const scene = new THREE.Scene();
@@ -24,11 +23,13 @@ renderer.render(scene, camera);
 
 
 renderer.outputEncoding = THREE.sRGBEncoding;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
 
 const hdri = new RGBELoader();
 
-hdri.load('./golf.hdr', function(texture){
+hdri.load('./winter.hdr', function(texture){
   texture.mapping = THREE.EquirectangularReflectionMapping;
+  
   scene.background = texture;
   scene.environment = texture;
 
@@ -109,8 +110,8 @@ scene.add(sphere2);
   scene.add(sphere);
 })
 
-const texture = new THREE.TextureLoader();
-const icecreamcone = texture.load('./cone.jpeg')
+
+
  
 const flyControl = new FlyControls(camera, renderer.domElement);
 flyControl.movementSpeed = 1;
