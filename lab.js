@@ -1,8 +1,7 @@
 import './style.css'
 import * as THREE from 'three'
-import { RGBELoader} from 'three/examples/jsm/loaders/RGBELoader.js';
-import { FlyControls } from 'three/examples/jsm/controls/FlyControls.js';
-
+import {RGBELoader} from './RGBELoader.js'
+import { FlyControls } from './FlyControls.js';
 
 
 const scene = new THREE.Scene();
