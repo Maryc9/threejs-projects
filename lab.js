@@ -132,4 +132,3 @@ function animate(){
 
 animate();
 
-export {FlyControls};
