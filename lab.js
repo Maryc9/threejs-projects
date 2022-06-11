@@ -34,6 +34,35 @@ hdri.load('./winter.hdr', function(texture){
   scene.background = texture;
   scene.environment = texture;
 
+  const sphere6 = new THREE.Mesh(
+    new THREE.SphereGeometry(20, 50, 50),
+    new THREE.MeshStandardMaterial({
+      color: 0xd55d92,
+      roughness:0,
+      metalness: 1
+    })
+  );
+  sphere6.position.z = -100;
+  sphere6.position.y = 30;
+  sphere6.position.x = -2;
+
+  scene.add(sphere6);
+
+
+  const sphere7 = new THREE.Mesh(
+    new THREE.SphereGeometry(20, 50, 50),
+    new THREE.MeshStandardMaterial({
+      color: 0x2d00f7,
+      roughness:0,
+      metalness: 1
+    })
+  );
+  sphere7.position.z = -100;
+  sphere7.position.y = 30;
+  sphere7.position.x = 1;
+
+  scene.add(sphere7);
+
   const sphere5 = new THREE.Mesh(
     new THREE.SphereGeometry(5, 50, 50),
     new THREE.MeshStandardMaterial({
