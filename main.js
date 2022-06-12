@@ -1,7 +1,6 @@
-  
-import './style.css'
+import './style.css';
 import * as THREE from 'https://unpkg.com/three@0.141.0/build/three.module.js';
-
+import lava from './lava.jpeg';
 
 
 
@@ -26,7 +25,7 @@ renderer.render(scene, camera);
 const geo = new THREE.TorusKnotGeometry(5, 1, 100);
 const material = new THREE.MeshPhongMaterial({
   color:0x11ff7b,
-  map: new THREE.TextureLoader().load('lava.jpeg'),
+  map: new THREE.TextureLoader().load(lava),
   shininess: 10
 });
 const torus = new THREE.Mesh(geo, material);

@@ -1,8 +1,8 @@
-import './style.css'
-import * as THREE from 'three'
-import {RGBELoader} from './RGBELoader.js'
+import './style.css';
+import * as THREE from 'three';
+import {RGBELoader} from './RGBELoader.js';
 import { FlyControls } from './FlyControls.js';
-
+import winter from './winter.hdr';
 
 
 
@@ -28,7 +28,7 @@ renderer.toneMapping = THREE.ACESFilmicToneMapping;
 
 const hdri = new RGBELoader();
 
-hdri.load('./winter.hdr', function(texture){
+hdri.load(winter, function(texture){
   texture.mapping = THREE.EquirectangularReflectionMapping;
   
   scene.background = texture;
