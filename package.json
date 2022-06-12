@@ -1,4 +1,5 @@
 {
+  "homepage": "https://maryc9.github.io/threejs-projects",
   "name": "main-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages",
+    "deploy": "gh-pages -d dist",
     "type": "module"
   },
   "devDependencies": {
