@@ -57,8 +57,8 @@ torus3.position.z = 10;
 torus3.position.x =  -20;
 scene.add(torus3);
 // light
-const point = new THREE.PointLight(0x11ff7b, 100 )
-const ambient =  new THREE.AmbientLight(0x11ff7b, 6)
+const point = new THREE.PointLight(0x11ff7b, 10 )
+const ambient =  new THREE.AmbientLight(0x11ff7b, 4)
 
 scene.add(ambient, point)
 
