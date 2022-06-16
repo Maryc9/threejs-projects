@@ -8,6 +8,7 @@ import * as THREE from 'https://unpkg.com/three@0.141.0/build/three.module.js';
 
 
 
+
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, innerWidth/innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({
@@ -58,7 +59,7 @@ torus3.position.x =  -20;
 scene.add(torus3);
 // light
 const point = new THREE.PointLight(0x11ff7b, 100 )
-const ambient =  new THREE.AmbientLight(0x11ff7b, 3)
+const ambient =  new THREE.AmbientLight(0x11ff7b, 6)
 
 scene.add(ambient, point)
 
