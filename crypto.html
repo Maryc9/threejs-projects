@@ -1,117 +1,54 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <title>films</title>
 </head>
 <body>
-    <h1>Cryptocurrencies</h1>
-    <nav>
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#ETH">ETH</a></li>
-            <li><a href="#BTC">BTC</a></li>
-            <li><a href="#NFTS">NFTS</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-    </section>
-    <section id="ETH">
-        <h2>Ethereum</h2>
-        <img src="./assets/flipeth.41c5053e.png" width="100px">
-        <div id="bx">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <p>Ethereum is a popular token, created by vitalak lorem in 20##. its priced surged in 2### making it 
-            a token that showed its value.
-        </p>
-        <div><a href="https://www.coinbase.com/price/ethereum">Where to buy</a></div>
-    </section>
-    <section id="BTC">
-        <h2>Bitcoin</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, eveniet.</p>
-    </section>
-<section id="NFTS">
-    <h2>Non Fungiable Tokens</h2>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, veniam.</P>
-</section>
-<style>
-h1{
-    font-size: 40px;
-    color: blueviolet;
-    font-family: 'Cinzel', serif;
-}
-nav{
-    position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 50%;
-  height: 40px;
-  margin-left: 38rem;
-  background: #6c757d;
-  opacity: 0.3;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-}
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    letter-spacing: 0.2rem;
-    margin:  0 1rem;
-}
-nav ul li a:hover{
-    color: gold;
-    opacity: 30;
-}
-section{
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 90vh;
-  scroll-snap-align: center;
- margin-top: 10rem;
-}
-section h2{
- font-size: 35px;
- color: gold;
-position: relative;
-margin-bottom: 15rem;
-}
+  <h1>film recommendations</h1>
 
-#ETH img{
-    position: relative;
-    top: -19rem;
-    left: 8rem;
-}
-#bx{
-    background-color: blueviolet;
-    display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-    bottom: 10rem;
-}
-#bx div{
- width: 20rem;
- height: 120%;
-  margin: 10px;
-  background-color: gold;
-  opacity: 0.7;
-   line-height: 70px;
-   border-radius: 20%;
-}
+  <div id="box">
+    <div><img src="./away.jpg" alt=""> <h2>spirited away</h2></div>
+    <div><img src="./moonlight.jpg" alt=""> <h2>moonlight</h2></div>
+    <div><img src="./chucky.webp" alt=""> <h2>Childs play</h2></div>
+    <div><img src="./donnie.webp" alt=""> <h2>donnie darko</h2></div>
+    <div><img src="./term.jpg" alt=""> <h2>the terminator</h2></div>
+    <div><img src="./matrix.jpg" alt=""> <h2>the Matrix</h2></div>
+    <div><img src="./sleep.jpg" alt=""> <h2>dr sleep</h2></div>
+    <div><img src="./wellness.webp" alt=""> <h2>A cure for wellness</h2></div>
+    <div><img src="./shaw.jpg" alt=""> <h2> the Shawshank redemption</h2></div>
+    <div><img src="./the.jpg" alt=""> <h2>the mummy</h2></div>
+    <div><img src="./escape.jpg" alt=""> <h2> escape from alcatraz</h2></div>
 
+  </div>
+
+  <style>
+ 
+    body{
+      background: #6c757d;
+      font-family: 'Bebas Neue', cursive;
+    }
+    h1{
+      color: #ffaa00;
+    }
+    #box{
+display: flex;
+flex-wrap: wrap;
+    }
+    #box div{
+      width: -0.5px;
+  margin: 30px;
+    }
+    #box div img{
+      width: 350px;
+      height: 400px;
+    }
+    #box div h2{
+      color: #ffaa00;
+    }
    
-
-</style>
+  </style>
 </body>
 </html>
