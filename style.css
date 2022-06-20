@@ -9,7 +9,7 @@ body{
 
 
 }
- 
+
 nav {
   position: fixed;
   top: 0;
@@ -36,7 +36,7 @@ nav ul li a{
 
   main{
 position: absolute;
-    color: #fff;
+    color: orange;
     font-family: 'Orbitron', sans-serif;
   }
 
@@ -56,7 +56,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
-width: 195%;
+width: 175%;
 height: 80vh;
 scroll-snap-align: center;
 
@@ -90,6 +90,8 @@ section h1{
 
 #projects{
   margin-top: 35rem;
+  position: relative;
+  right: -4.5rem;
 }
 
 #projects div {
@@ -106,6 +108,8 @@ section h1{
 }
 #about{
   margin-top: 10rem;
+   position: relative;
+  right: -4.5rem;
 }
 #about h1{
   margin-bottom: 10rem ;
@@ -136,6 +140,8 @@ section h1{
 
 #skills{
   margin-top: 20rem;
+  position: relative;
+  right: -4.5rem;
 }
 #skills h3{
   color: #000;
@@ -154,6 +160,8 @@ section h1{
 
 #contact{
   margin-top: 45rem;
+  position: relative;
+  right: -4.5rem;
 }
 #contact div{
   color: #000;
@@ -176,12 +184,18 @@ border-radius: 5%;
 @media (max-width:810px){
   main header h1{
     letter-spacing: 2.5rem;
-    font-size: 80px;
+    font-size: 30px;
     color: #00ff40;
 
   }
+  body{
+    background: #000;
+  }
   nav ul li a{
-    font-size: 32px;
+    font-size: 42px;
+   }
+   canvas{
+    height: 100vh;
    }
    nav {
     position: fixed;
@@ -296,16 +310,22 @@ right: 10rem;
 
 @media screen and (max-width:840px) and (min-width: 480px){
   main header h1{
-    letter-spacing: 2.5rem;
-    font-size: 110px;
-    color: #00ff40;
+    letter-spacing: 2rem;
+    font-size: 55px;
+    position: relative;
+    right: -2rem;
+    top: 1rem;
+  
+
 
   }
   nav ul li a{
-    font-size: 55px;
+    font-size: 22px;
+    position: relative;
+    bottom: 1.5rem;
    }
    nav {
-    margin-left: 35.5rem;
+    margin-left: 5.5rem;
   
   }
   main header #summary{
@@ -313,7 +333,7 @@ right: 10rem;
   }
   
   section{
-    width: 195%;
+    width: 15%;
     height: 210vh
       }
 
@@ -330,9 +350,9 @@ right: 10rem;
 }
 
 #projects div {
-  padding: 250px;
+  padding: 90px;
   position: relative;
-  right: 1rem;
+  right: -8rem;
  }
 #projects div a{
   color: #000;
@@ -340,14 +360,14 @@ right: 10rem;
   font-size: 55px;
 }
 #about div{
-  padding: 250px;
+  padding: 90px;
   position: relative;
-  right: 1rem;
+  right: 40rem;
 
 }
 #about div p{
-  font-size: 75px;
-  line-height: 1em;
+  font-size: 45px;
+  line-height: 2em;
 
   
   position: relative;
@@ -360,7 +380,7 @@ right: 10rem;
  margin: 0 1.5rem;
 }
 #about div a{
-  font-size: 50px;
+  font-size: 55px;
   color: fuchsia;
 } 
 
