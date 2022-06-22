@@ -179,134 +179,101 @@ border-radius: 5%;
 #contact div h2{
  position: relative;
   right: 3rem;
+
 }
 
-@media (max-width:810px){
-  main header h1{
-    letter-spacing: 2.5rem;
-    font-size: 30px;
-    color: #00ff40;
 
-  }
-  body{
-    background: #000;
+@media screen and (max-width:440px) and (min-width:280px) {
+  main header h1{
+    letter-spacing: 2rem;
+    font-size: 40px;
+    position: relative;
+    right: -2rem;
+    top: 1rem;
   }
   nav ul li a{
-    font-size: 42px;
-   }
-   canvas{
-    height: 100vh;
+    font-size: 12px;
+    position: relative;
+    bottom: 1.5rem;
    }
    nav {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: 60px;
-    margin-left: 13.5rem;
+    margin-left: -2rem;
   
   }
   main header #summary{
+    font-size: 18px;
+  }
+  #projects{
+    margin-top: 60rem;
+  }
+  
+  #projects div {
+    padding: 30px;
+    position: relative;
+    left: -25rem;
+   }
+  #projects div a{
     font-size: 35px;
   }
+  #about div{
+    padding: 70px;
+    width: 35rem;
+    height: 25rem;
+   
+    position: relative;
+    left: -25rem;
   
-  section{
-    
-width: 195%;
-height: 290vh
   }
-
- section div {
-   display: flex;
-   margin: 40px;
- }
-
- section div a{
-   text-decoration: none;
-   color: #fff;
-   font-size: 20px;
-   text-align: center;
-
- }
- #projects{
-  margin-top: 155rem;
-}
-
-#projects div {
-  padding: 200px;
-  position: relative;
-  right: 23rem;
- }
-#projects div a{
-  color: #000;
-  opacity: 10;
-  font-size: 45px;
-}
-
-#about{
-  margin-top: 10rem;
-}
-#about h1{
-  margin-bottom: 10rem ;
-}
-#about div{
-  padding: 210px;
-  position: relative;
-  right: 23rem;
-
-}
-#about div p{
-  font-size: 40px;
-  line-height: 2.7em;
-  position: relative;
-  top: -15rem;
-}
-#about div img{
-  width: 50px;
- left: 25rem;
- bottom: -11rem;
-}
-#about div a{
-  font-size: 40px;
-  color: fuchsia;
-}
-#skills{
-  margin-top: 20rem;
+  #about div p{
+    font-size: 25px;
+    line-height: 3em;
+   position: relative;
   
-}
-#skills h3{
-  padding: 100px;
-  font-size: 50px;
-  position: relative;
-  right: 25rem;
-
-}
-#skills h2{
-  font-size: 45px;
-  position: relative;
-  right: 25rem;
-}
-#contact div{
+  }
+  #about div img{
+    width: 40px;
+   right: -0rem;
+   bottom: 8rem; 
+   margin: 0 1.5rem;
+  }
+  #about div a{
+    font-size: 25px;
+    color: fuchsia;
+  } 
+  #skills h3{
+    padding: 18px;
+    font-size: 20px;
+    position: relative;
+    left: -25rem;
   
-padding: 100px;
-font-size: 35px;
-position: relative;
-right: 20rem;
-
-
-}
-#contact div h1{
-  top: -20rem;
-  left: 18rem;
-  color: #fff;
+  }
+  #skills h2{
+    font-size: 25px;
+    position: relative;
+    left: -25rem;
+  }
+  #contact div h1{
+    background-color: #ced4da;
+    border-radius: 5%;
+    height: 2em;
+    opacity: 10;
+    top: -20rem;
+    right: 25rem;
+  font-size: 28px;
+  color: rgb(16, 15, 15);
   opacity: 1;
-  position: relative;
+    position: relative;
+   
+  }
+  #contact div h2{
+    position: relative;
+    right: 10rem;
+    font-size: 20px;
+    
+    }
 }
-#contact div h2{
-position: relative;
-right: 10rem;
-}
-}
+
+
 
 @media screen and (max-width:840px) and (min-width: 480px){
   main header h1{
