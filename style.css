@@ -46,9 +46,7 @@ position: absolute;
     color: #00ff40;
 
   }
-main header #summary{
-  font-size: 20px;
-}
+
 
   section{
     display: flex;
@@ -56,7 +54,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
-width: 175%;
+width: 165%;
 height: 80vh;
 scroll-snap-align: center;
 
@@ -172,13 +170,15 @@ opacity: 0.7;
 border-radius: 5%;
 }
 #contact div h1{
-  left: 10rem;
+  left: 15rem;
   position: relative;
   top: -9rem;
   color: #ffff;
   opacity: 1;
-
-
+}
+#contact div h2{
+ position: relative;
+  right: 3rem;
 }
 
 @media (max-width:810px){
@@ -325,16 +325,15 @@ right: 10rem;
     bottom: 1.5rem;
    }
    nav {
-    margin-left: 5.5rem;
+    margin-left: 3.5rem;
   
   }
   main header #summary{
-    font-size: 55px;
+    font-size: 25px;
   }
   
   section{
-    width: 15%;
-    height: 210vh
+    height: 100vh
       }
 
      section div {
@@ -346,13 +345,13 @@ right: 10rem;
        font-size: 20px;
      }
  #projects{
-  margin-top: 195rem;
+  margin-top: 60rem;
 }
 
 #projects div {
   padding: 90px;
   position: relative;
-  right: -8rem;
+  left: -45rem;
  }
 #projects div a{
   color: #000;
@@ -362,40 +361,38 @@ right: 10rem;
 #about div{
   padding: 90px;
   position: relative;
-  right: 40rem;
+  left: -45rem;
 
 }
 #about div p{
-  font-size: 45px;
-  line-height: 2em;
+  font-size: 35px;
+  line-height: 3em;
+ position: relative;
 
-  
-  position: relative;
-  top: -15rem;
 }
 #about div img{
   width: 70px;
- left: 27rem;
- bottom: -15rem; 
+ right: -0rem;
+ bottom: -5rem; 
  margin: 0 1.5rem;
 }
 #about div a{
-  font-size: 55px;
+  font-size: 35px;
   color: fuchsia;
 } 
 
 
 #skills h3{
-  padding: 70px;
-  font-size: 60px;
+  padding: 50px;
+  font-size: 40px;
   position: relative;
-  right: 1rem;
+  left: -45rem;
 
 }
 #skills h2{
-  font-size: 58px;
+  font-size: 50px;
   position: relative;
-  right: 1rem;
+  left: -45rem;
 }
 
 #contact div h1{
@@ -404,8 +401,8 @@ right: 10rem;
   height: 2em;
   opacity: 10;
   top: -20rem;
-  left: 18rem;
-font-size: 68px;
+  right: -15rem;
+font-size: 48px;
 color: rgb(16, 15, 15);
 opacity: 1;
   position: relative;
@@ -416,4 +413,8 @@ opacity: 1;
   font-size: 60px;
   }
 
+  main{
+   font-size: 15px;
+   
+  }
 }
