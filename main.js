@@ -2,7 +2,7 @@ import './style.css';
 // import * as THREE from 'https://unpkg.com/three@0.141.0/build/three.module.js';
 import * as THREE from 'three';
 import { FlyControls } from './FlyControls.js';
-
+import c132 from './c132.jpeg'
 
 
 
