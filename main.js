@@ -2,7 +2,8 @@ import './style.css';
 // import * as THREE from 'https://unpkg.com/three@0.141.0/build/three.module.js';
 import * as THREE from 'three';
 import { FlyControls } from './FlyControls.js';
-import './c132.jpeg'
+import c132 from './c132.jpeg';
+import star from './star.jpg';
 
 
 
@@ -23,8 +24,8 @@ camera.position.setZ(25);
 
 renderer.render(scene, camera);
 
-let space = new THREE.TextureLoader().load('./c132.jpeg');
-let star = new THREE.TextureLoader().load('./star.jpg');
+// let space = new THREE.TextureLoader().load('./c132.jpeg');
+// let star = new THREE.TextureLoader().load('./star.jpg');
 
 
 
@@ -38,7 +39,7 @@ flyControl.dragToLook = false;
 const sphere = new THREE.Mesh(
   new THREE.SphereGeometry(10, 50, 50),
   new THREE.MeshPhongMaterial({
-   map: space,
+   map:  new THREE.TextureLoader().load(c132),
    shininess: 100
   })
 )
@@ -49,7 +50,7 @@ function addStar(){
   const geo = new THREE.SphereGeometry(0.07, 24, 24);
   const mat = new THREE.MeshStandardMaterial({
     color: 0xaaaaaa,
-    map: star
+    map:  new THREE.TextureLoader().load(star),
   })
   const starry = new THREE.Mesh(geo, mat);
 
